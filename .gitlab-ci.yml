@@ -20,7 +20,7 @@ maven-test:
   stage: test
   script: "mvn test -B"
 
-#Job 3 and finall
+#Job 3
 deploy:
   stage: deploy
   image: ruby:latest
