@@ -7,7 +7,7 @@ stages:
 #Job 1
 maven-build:
   stage: build
-  script: "mvn install -f /builds/Carmenjara/client-microservice-CRM/microservices-docker/pom.xml"
+  script: "mvn package -B"
   artifacts:
     paths: 
       - '/root/.m2/repository/com/devops/microservices-docker/0.0.1-SNAPSHOT/microservices-docker-0.0.1-SNAPSHOT.jar'
